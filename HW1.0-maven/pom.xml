@@ -130,7 +130,7 @@
                 <configuration>
                     <proguardVersion>6.0.2</proguardVersion>
                     <obfuscate>true</obfuscate>
-                    <injar>${project.name}.jar</injar>
+                    <injar>${project.build.finalName}-jar-with-dependencies.jar</injar>
                     <outjar>${project.name}-release.jar</outjar>
                     <outputDirectory>${project.build.directory}</outputDirectory>
                     <options>
