@@ -1,0 +1,7 @@
+ru.otus.hw10.Main -> ru.otus.hw10.Main:
+    void <init>() -> <init>
+    void main(java.lang.String[]) -> main
+    void calcTime(java.lang.Runnable) -> a
+    void calcTimeNew(java.lang.Runnable) -> b
+    void lambda$main$1(java.util.List,java.util.Collection) -> a
+    void lambda$main$0(java.util.List,java.util.Collection) -> b
