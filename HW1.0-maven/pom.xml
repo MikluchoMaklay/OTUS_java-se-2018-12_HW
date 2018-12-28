@@ -128,9 +128,20 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <assembly>
+                        <inclusions>
+                            <inclusion>
+                                <groupId>com.google.guava</groupId>
+                                <artifactId>guava</artifactId>
+                                <filter>com/google/common/collect/**,com/google/common/base/**</filter>
+                                <!--<library>true</library>-->
+                            </inclusion>
+                        </inclusions>
+                    </assembly>
                     <proguardVersion>6.0.2</proguardVersion>
                     <obfuscate>true</obfuscate>
-                    <injar>${project.build.finalName}-jar-with-dependencies.jar</injar>
+                    <!--<injar>${project.build.finalName}-jar-with-dependencies.jar</injar>-->
+                    <outjar>${project.name}.jar</outjar>
                     <outjar>${project.name}-release.jar</outjar>
                     <outputDirectory>${project.build.directory}</outputDirectory>
                     <options>

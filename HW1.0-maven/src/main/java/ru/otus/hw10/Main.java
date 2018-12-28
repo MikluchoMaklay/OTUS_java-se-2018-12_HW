@@ -1,6 +1,6 @@
 package ru.otus.hw10;
 
-//import com.google.common.collect.Lists;
+import com.google.common.collect.Lists;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -42,10 +42,10 @@ public class Main {
 
         List<Integer> result = new ArrayList<>();
         Collections.shuffle((List<Integer>) example);
-//        calcTime(() -> result.addAll(Lists.reverse((List<Integer>) example)));
-//        calcTimeNew(() -> result.addAll(Lists.reverse((List<Integer>) example)));
-        calcTime(() -> result.addAll((List<Integer>) example));
-        calcTimeNew(() -> result.addAll((List<Integer>) example));
+        calcTime(() -> result.addAll(Lists.reverse((List<Integer>) example)));
+        calcTimeNew(() -> result.addAll(Lists.reverse((List<Integer>) example)));
+//        calcTime(() -> result.addAll((List<Integer>) example));
+//        calcTimeNew(() -> result.addAll((List<Integer>) example));
     }
 
     private static void calcTime(Runnable runnable) {
