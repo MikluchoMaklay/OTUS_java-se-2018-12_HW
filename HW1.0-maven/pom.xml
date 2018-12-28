@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-<!--    <packaging>pom</packaging>-->
 
     <!-- Project Object Model -->
 
@@ -53,11 +52,11 @@
             <scope>compile</scope>
         </dependency>
 
-<!--        <dependency>
+        <dependency>
             <groupId>net.sf.proguard</groupId>
             <artifactId>proguard-base</artifactId>
             <version>6.0.2</version>
-        </dependency>-->
+        </dependency>
 
     </dependencies>
 
@@ -106,7 +105,7 @@
             </plugin>
 
             <!-- proguard configuration -->
-<!--            <plugin>
+            <plugin>
                 <groupId>com.github.wvengen</groupId>
                 <artifactId>proguard-maven-plugin</artifactId>
                 <version>2.0.14</version>
@@ -134,11 +133,10 @@
                     </options>
 
                 </configuration>
-            </plugin>-->
+            </plugin>
 
         </plugins>
 
     </build>
-
 
 </project>
